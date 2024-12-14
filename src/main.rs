@@ -43,6 +43,7 @@ fn main() {
     log::info!("Trying to launch {}", cli.application_name);
     let _process = match IsolatedProcess::run(
         &cli.application_name,
+        &cli.container_folder,
         &cli.command_line,
         app_container_profile,
     ) {

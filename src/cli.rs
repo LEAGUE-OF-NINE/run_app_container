@@ -7,6 +7,10 @@ pub struct Cli {
     #[clap(short, long)]
     pub container_name: String,
 
+    /// The folder which the container will have access to
+    #[clap(short, long)]
+    pub container_folder: String,
+
     /// The name of the module to be executed.
     #[clap(short, long)]
     pub application_name: String,
